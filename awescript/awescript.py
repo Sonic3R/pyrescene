@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 # MADE BY GUBER - REMOVE THIS TO MAKE YOUR FIRST BORN MY LUNCH

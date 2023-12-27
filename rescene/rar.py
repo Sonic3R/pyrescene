@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 # Copyright (c) 2008-2010 ReScene.com
@@ -1101,8 +1101,12 @@ class RarPackedFileBlock(RarBlock): # 0x74
 	def ftime(self, timetuple):
 		"""Formats the time tuple to a string."""
 		if not timetuple:
-			return "UNKNOWN"		seconds = timetuple[5]		if int(seconds) != seconds:
-			# sub second precision			return "%04d-%02d-%02d %02d:%02d:%02.7f" % timetuple		else:
+			return "UNKNOWN"
+		seconds = timetuple[5]
+		if int(seconds) != seconds:
+			# sub second precision
+			return "%04d-%02d-%02d %02d:%02d:%02.7f" % timetuple
+		else:
 			return "%04d-%02d-%02d %02d:%02d:%02d" % timetuple
 
 	def get_compression_name(self):
